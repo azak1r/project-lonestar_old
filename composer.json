@@ -2,7 +2,7 @@
     "name": "crazyjoery/lonestarweb",
     "description": "Lone Star Web Services Project.",
     "keywords": ["framework", "laravel", "gaming", "community"],
-    "license": "GPL-3.0+",
+    "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
