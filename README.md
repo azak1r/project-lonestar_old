@@ -10,9 +10,19 @@
 * Third-porty application integration
 * Authenticate users with the third-party applications
 
+# Dependencies
+* PHP 5.6 minimal
+* Composer
+* Node JS
+* Bower
+* Gulp
+* Mysql
+
 # Installation
 ---
-Coming Soon
+Once all dependencies are installed you can start pulling in the repo and getting it setup.
+
+Coming Soon!
 
 # More on laravel
 
