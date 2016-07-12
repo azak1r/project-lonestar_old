@@ -15,13 +15,42 @@ elixir(function(mix) {
        'public/build/fonts/font-awesome'
      )
      .copy(
+         'node_modules/owl.carousel/dist/assets/owl.carousel.css',
+         'public/css/vendor/owl.carousel/owl.carousel.css'
+     )
+     .copy(
        'node_modules/bootstrap-sass/assets/fonts/bootstrap',
        'public/build/fonts/bootstrap'
      )
      .copy(
        'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-       'public/js/vendor/bootstrap'
+         'public/js/vendor/bootstrap'
      )
+     .copy(
+         'node_modules/jquery/dist/jquery.min.js',
+         'public/js/vendor/jquery'
+     )
+     .copy(
+         'node_modules/HexagonProgress/jquery.hexagonprogress.min.js',
+         'resources/assets/js/plugin/hexagonprogress'
+     )
+     .copy(
+         'node_modules/jarallax/jarallax/jarallax.js',
+         'resources/assets/js/plugin/jarallax'
+     )
+     .copy(
+         'node_modules/jquery.countdown/dist/jquery.countdown.min.js',
+         'resources/assets/js/plugin/jquery.countdown/jquery.countdown.min.js'
+     )
+     .copy(
+         'node_modules/owl.carousel/dist/owl.carousel.min.js',
+         'resources/assets/js/plugin/owl.carousel/owl.carousel.min.js'
+     )
+     .copy(
+         'node_modules/smoothscroll-for-websites/Smoothscroll.js',
+         'resources/assets/js/plugin/smoothscroll/smoothscroll.js'
+     )
+
 
      /**
       * Process frontend SCSS stylesheets
@@ -30,6 +59,10 @@ elixir(function(mix) {
         'frontend/app.scss',
         'plugin/sweetalert/sweetalert.scss'
      ], 'resources/assets/css/frontend/app.css')
+     .sass([
+         'frontend/youplay.scss',
+         'plugin/sweetalert/sweetalert.scss'
+     ], 'resources/assets/css/frontend/dark.css')
 
      /**
       * Combine pre-processed frontend CSS files
@@ -38,14 +71,25 @@ elixir(function(mix) {
         'frontend/app.css'
      ], 'public/css/frontend.css')
 
+     .styles([
+         'frontend/dark.css'
+     ], 'public/css/dark.css')
+
      /**
       * Combine frontend scripts
       */
      .scripts([
-        'plugin/sweetalert/sweetalert.min.js',
-        'plugins.js',
-        'frontend/app.js'
-     ], 'public/js/frontend.js')
+         'plugin/css-shapes-polyfill/shapes-polyfill.min.js',
+         'plugin/hexagonprogress/jquery.hexagonprogress.min.js',
+         'plugin/jarallax/jarallax.js',
+         'plugin/jquery.countdown/jquery.countdown.min.js',
+         'plugin/owl.carousel/owl.carousel.min.js',
+         'plugin/smoothscroll/smoothscroll.js',
+         'plugin/youplay/youplay.min.js',
+         'plugin/sweetalert/sweetalert.min.js',
+         'plugins.js',
+         'frontend/app.js'
+     ],  'public/js/frontend.js')
 
      /**
       * Process backend SCSS stylesheets
@@ -77,5 +121,5 @@ elixir(function(mix) {
     /**
       * Apply version control
       */
-     .version(["public/css/frontend.css", "public/js/frontend.js", "public/css/backend.css", "public/js/backend.js"]);
+     .version(["public/css/frontend.css", "public/css/dark.css", "public/js/frontend.js", "public/css/backend.css", "public/js/backend.js"]);
 });

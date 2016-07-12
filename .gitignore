@@ -1,3 +1,4 @@
+/public/img/banners/banner-apoc.jpg
 /vendor
 /node_modules
 /public/storage
@@ -22,6 +23,7 @@ Thumbs.db
 .project
 _ide_helper.php
 composer.phar
+/resources/views/frontend/index_backup.blade.php
 error.log
 Todo.rtf
 .vagrant
