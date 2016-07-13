@@ -26,4 +26,16 @@ composer.phar
 /resources/views/frontend/index_backup.blade.php
 error.log
 Todo.rtf
+/resources/assets/js/plugin/youplay
+/resources/assets/sass/frontend/youplay-light.scss
+/resources/assets/sass/frontend/_variables-shooter.scss
+/resources/assets/sass/frontend/youplay-shooter.scss
+/resources/assets/sass/frontend/_variables-anime.scss
+/resources/assets/sass/frontend/_includes.scss
+/resources/assets/sass/frontend/youplay.scss
+/resources/assets/sass/frontend/_variables.scss
+/resources/assets/sass/frontend/_variables-light.scss
+/resources/assets/sass/frontend/youplay-anime.scss
+/resources/assets/sass/frontend/_helpers.scss
+/resources/assets/sass/frontend/parts
 .vagrant

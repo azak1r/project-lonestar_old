@@ -10,6 +10,8 @@
 * Third-porty application integration
 * Authenticate users with the third-party applications
 
+The app is designed with the [Youplay theme by NKdev](https://themeforest.net/item/youplay-game-template-based-on-bootstrap/11306207)
+
 # Dependencies
 * PHP 5.6 minimal
 * Composer

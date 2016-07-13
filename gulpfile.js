@@ -19,6 +19,22 @@ elixir(function(mix) {
          'public/css/vendor/owl.carousel/owl.carousel.css'
      )
      .copy(
+         'node_modules/magnific-popup/dist/magnific-popup.css',
+         'public/css/vendor/popup'
+     )
+     .copy(
+         'node_modules/social-likes/dist/social-likes_flat.css',
+         'public/css/vendor/social-likes'
+     )
+     .copy(
+         'node_modules/social-likes/dist/social-likes.min.js',
+         'resources/assets/js/plugin/social-likes'
+     )
+     .copy(
+         'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+         'resources/assets/js/plugin/magnific-popup'
+     )
+     .copy(
        'node_modules/bootstrap-sass/assets/fonts/bootstrap',
        'public/build/fonts/bootstrap'
      )
@@ -87,6 +103,8 @@ elixir(function(mix) {
          'plugin/smoothscroll/smoothscroll.js',
          'plugin/youplay/youplay.min.js',
          'plugin/sweetalert/sweetalert.min.js',
+         'plugin/magnific-popup/jquery.magnific-popup.min.js',
+         'plugin/social-likes/social-likes.min.js',
          'plugins.js',
          'frontend/app.js'
      ],  'public/js/frontend.js')

@@ -32,6 +32,8 @@
             @yield('content')
 
 
+
+        </section><!-- Section -->
         <footer class="youplay-footer-parallax">
             <div class="wrapper" style="background-image: url('/img/banners/footer-bg.jpg')">
                 <div class="social">
@@ -75,7 +77,6 @@
                 </div>
             </div>
         </footer>
-        </section><!-- Section -->
 
         <!-- Scripts -->
         {!! Html::script('js/vendor/jquery/jquery.min.js') !!}
